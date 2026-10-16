@@ -6,11 +6,9 @@
 #include <math.h>
 #include <locale.h>
 
-
 double task1(double gr);
 void task2_4(double x);
 double taskdz(double x, double y, double z);
-
 
 int main(void)
 {
@@ -23,7 +21,6 @@ int main(void)
     double z;
     double result;
 
-
     printf("\n===== ЗАДАНИЕ 1 =====\n");
 
     printf("Введите угол в градусах: ");
@@ -34,7 +31,6 @@ int main(void)
     printf("Результат: sin(%.0f град) = %.6f\n",
         gr, result);
 
-
     printf("\n===== ЗАДАНИЕ 2-4 =====\n");
 
     printf("Введите x: ");
@@ -42,22 +38,25 @@ int main(void)
 
     task2_4(x);
 
-
     printf("\n===== ДОМАШНЕЕ ЗАДАНИЕ =====\n");
 
-    x = 4000.0;
-    y = -0.875;
-    z = -0.000475;
+    printf("Введите x: ");
+    scanf("%lf", &x);
+
+    printf("Введите y: ");
+    scanf("%lf", &y);
+
+    printf("Введите z: ");
+    scanf("%lf", &z);
 
     result = taskdz(x, y, z);
 
-    printf("При x = %.0f, y = %.3f, z = %.6f\n",
+    printf("При x = %.4f, y = %.4f, z = %.6f\n",
         x, y, z);
     printf("w = %.4f\n", result);
 
     return 0;
 }
-
 
 double task1(double gr)
 {
@@ -69,7 +68,6 @@ double task1(double gr)
 
     return result;
 }
-
 
 void task2_4(double x)
 {
@@ -106,7 +104,6 @@ void task2_4(double x)
     printf("а) только одно из A и B чётное: %d\n", cond_a);
     printf("б) A, B, C кратны 3: %d\n", cond_b);
 }
-
 
 double taskdz(double x, double y, double z)
 {
